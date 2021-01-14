@@ -1,0 +1,5 @@
+#fde94d lightest yellow
+#fdd209 orangie yellow
+#ffd700 default yellow
+#cdb193 brownish
+#c9b094

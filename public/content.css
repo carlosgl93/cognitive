@@ -1,0 +1,301 @@
+/* Add a black background color to the top navigation */
+@font-face {
+    font-family: Spartan-League;
+    src: url("leaguespartan-bold.ttf"); /* IE9 Compat Modes */
+    src: url("leaguespartan-bold.woff") format("woff"), /* Modern Browsers */
+         url("leaguespartan-bold.ttf")  format("truetype"), /* Safari, Android, iOS */
+    
+}
+body {
+  font-family: Spartan-league;
+}
+
+nav a {
+  color: white;
+  
+  
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-brand:hover {
+  background-color: black;
+}
+
+/* Style the links inside the navigation bar */
+
+/* Style the logo */ 
+
+a .active {
+  max-height: 50px;
+}
+
+.logoImg {
+  max-width: 50px;
+}
+
+.logoText {
+  margin-top: 12px;
+  margin-left: -50px;
+  max-width: 150px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+/* Yellow Top border */
+main {
+    border-top: 0.4vh solid #ffd700;
+    border-bottom: 0.4vh solid #ffd700;
+    background-color: white;
+    background-size: cover;   
+}
+
+.planes {
+    text-align: center;
+}
+
+.table-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-row-gap: 5vh;
+    margin: 2.5vw;
+}
+
+.twomonths {
+    border: 0.4vh solid #ffd700;
+
+}
+
+.sixmonths {
+    border: 0.4vh solid #ffd700;
+}
+
+.morebuttons button a {
+    text-decoration: none;
+    color: #cdb193;
+}
+
+
+
+.tachado {
+    color: red;
+    text-decoration: line-through;
+}
+
+footer {
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    color: #cdb193;
+    background-color: black;
+}
+
+footer ul {
+    list-style-type: none;
+    align-items: horizontal;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 0;
+    margin: 0;
+    color: #ffd700;
+    display: inline;
+    
+}
+
+footer ul li a {
+  color: #ffd700;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 750px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "content"
+        "footer";
+    }
+    .topnav {
+        margin: 0;
+        grid-area: nav;
+    }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav .active img {
+      max-height: 30px;
+      background-color: black;
+  }
+  .logoText {
+    display: none;
+  }
+  .logoText {
+    display: none;
+  }
+}
+    main {
+        min-height: 80vh;
+        grid-area: content;
+        background-color: white;
+        background-attachment: scroll;
+    }
+    main h1 {
+      text-align: center;
+      margin-top: 5vh;
+    }
+
+    
+
+    .twomonths {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+    .twomonthspic {
+        min-height: 30vh;
+        background-image: url("MarkieAdrian.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .twodetails ul {
+        align-content: left;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .sixmonths {
+    min-height: 70vh;
+}
+
+    .sixmonthspic {
+        min-height: 30vh;
+        background-image: url("EvelynLaughing.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .sixdetails ul {
+        align-content: left;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .compra {
+        position: relative;
+        padding: 1.5vh;
+        margin: 2vh;
+        text-align: center;
+        align-content: center;
+        background-color: black;
+        border-radius: 15vh;
+        width: 95%;
+        font-size: 15px;
+        color: #cdb193;
+        font-weight: bolder;
+        border-width: 0;
+        text-decoration: none;
+        margin-bottom: 5vh;
+    }
+
+    .compra a {
+        text-decoration: none;
+        color: #cdb193;
+    }
+
+    .morebuttons {
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 2.5vh;
+        color: #cdb193;
+        margin-bottom: 5vh;
+    }
+
+    .morebuttons button {
+        margin-left: 2vw;
+        position: relative;
+        padding: 2vh;
+        text-align: center;
+        align-content: center;
+        background-color: black;
+        border-radius: 15vh;
+        width: 95%;
+        font-size: 15px;
+        color: #cdb193;
+        font-weight: bolder;
+        border-width: 0;
+
+    }
+
+    #findus {
+      margin-bottom: 1vh;
+    }
+
+    
+
+    footer ul li {
+        font-size: 4vh;
+        
+    }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .logoText {
+    display: none;
+  }
+}

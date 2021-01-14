@@ -1,0 +1,257 @@
+
+/* Add a black background color to the top navigation */
+@font-face {
+    font-family: Spartan-League;
+    src: url("leaguespartan-bold.ttf"); /* IE9 Compat Modes */
+    src: url("leaguespartan-bold.woff") format("woff"), /* Modern Browsers */
+         url("leaguespartan-bold.ttf")  format("truetype"), /* Safari, Android, iOS */
+    
+}
+body {
+  font-family: Spartan-league;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  
+  
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-brand:hover {
+  background-color: black;
+}
+/* Style the links inside the navigation bar */
+
+/* Style the logo */ 
+
+a .active {
+  max-height: 50px;
+}
+
+.logoImg {
+  max-width: 50px;
+}
+
+.logoText {
+  margin-top: 12px;
+  margin-left: -50px;
+  max-width: 150px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+/* Yellow Top border */
+main {
+    border-top: 0.4vh solid #ffd700;
+    border-bottom: 0.4vh solid #ffd700;
+    
+}
+
+.wrapper main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70vw;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.threePics {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "larger twoSmaller";
+    max-width: 60vw;
+}
+.larger img {
+    margin: 0;
+    padding: 0;
+    max-width: 35vw;
+}
+
+.marginb {
+    margin-bottom: 1vh;
+}
+
+.twoSmaller img {
+    max-width: 17vw;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    color: #cdb193;
+    background-color: black;
+}
+
+footer ul {
+    list-style-type: none;
+    align-items: horizontal;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 0;
+    margin: 0;
+    color: #ffd700;
+    display: inline;
+    margin-right: 1vw;
+}
+
+footer ul li a {
+  color: #ffd700;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#findus {
+      margin-bottom: 1vh;
+    }
+
+    .lineheight {
+      line-height: 5%;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr;
+    } 
+
+    footer ul li {
+        font-size: 4vh;
+    }
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 750px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "content"
+        "footer";
+    }
+    .topnav {
+        margin: 0;
+        grid-area: nav;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+  }
+    .topnav .active img {
+      max-height: 30px;
+      background-color: black;
+  }
+  .logoText {
+    display: none;
+  }
+}
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+    #myTopnav a {
+        align-content: center;
+        vertical-align: middle;
+        
+    }
+
+    .margenwn {
+        margin-top: 30px;
+    }
+
+    .links {
+    display: flex;
+    float: right;
+    padding-right: 10%;
+}
+
+    .threePics {
+        margin-left: 7vw;
+        grid-column-gap: -150px;
+    }
+
+
+
+    .firstP {
+        margin-top: 10vh;
+    }
+
+    .firstP p {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    footer {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    margin: 0;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
